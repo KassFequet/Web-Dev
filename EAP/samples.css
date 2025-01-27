@@ -1,0 +1,118 @@
+/*This is question 1 of the assignment
+
+body {
+    background-color: silver;
+    color: blue;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+/* margin: 100px sets all margins to 100
+margin-top: 20px just sets the top margin
+margin: 0px 100px 0px 200px: sets all 4 margins to differentoptions - top right bottom left 
+
+h1,
+h2,
+h3 {
+  font-family: Times, 'Times New Roman', serif;
+  color: red;
+}
+
+p {
+  font-family: Calibri, Helvetica, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  font-size: 12pt;
+}
+
+a:link, a:visited {
+    color: blue;
+    text-decoration: underline;
+  }
+  
+a:hover {
+    color: silver;
+    background-color: blue;
+  }
+*/
+
+
+/*This is question 2 of the assignment*/
+
+.mainbox {
+    width: 1000px;
+    height: 600px;        /*-determined by content - give a height initally just to see it and would be removed later */
+    background-color: green; 
+    border: 4px solid black;
+    /* OR */
+    border-width: 4px;
+    border-style: solid;
+    border-color: black; 
+    /* Also set up each border different*/
+    border-left-style: dotted;
+    border-right-style: dashed;
+    border-right-color: red;
+
+    padding: 15px;
+    /* can also do padding-left: 15px;
+                    padding-right: 30px; 
+                    padding-right: 30px;
+    Can also do padding 10px, 15px, 10px, 15px; */
+    margin: auto; /* Centers the box - even if not asked for smart to put in*/
+}
+/* Place the box in the html document using
+<div class="mainbox">
+    </div> 
+Around the entire document in the body tag
+    */
+body {
+    background-image: url('BImages1.jpg');
+    background-repeat: repeat; /* This is the default */
+    margin: 50px; /*more for the top and bottom*/
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Helvetica";
+  color: green;
+}
+
+  p.style1 {
+    font-family: "Times New Roman";
+    font-size: 14pt;
+    color: black;
+    text-indent: 30px;
+}
+
+p.style2 {
+    font-family: "Times New Roman";
+    font-size: 12pt;
+    font-style: italic;
+    color: black;
+    margin-left: 30px;  
+    margin-right: 30px; 
+}
+
+
+main a:link {
+    color: red;
+    text-decoration: underline;
+    font-size: 12pt;
+  }
+  
+main a:visited {
+    color: red;
+    text-decoration: underline;
+    font-size: 12pt;
+  }
+  
+main a:hover {
+    color: blue;
+    text-decoration: none;
+    font-size: 12pt;
+  }
+
+ 
+
+/*This is to be inserted into my HTML
+<p class="style1">This is a paragraph with style 1.</p>
+<p class="style2">This is a paragraph with style 2.</p>
+*/

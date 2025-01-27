@@ -1,0 +1,72 @@
+body {
+  background-color: orange;
+}
+ 
+/* Put boxes at the top */
+.mainbox {
+  width: 1000px;
+  margin: auto;
+  background-color: black;
+  border: 3px solid red;
+  padding: 30px;
+  text-align: left;
+}
+ 
+/* Styles for the sections on a page */
+nav {
+  background-color: green;
+}
+ 
+footer {
+  background-color: green;
+}
+ 
+.bluesection {
+  background-color: blue;
+  padding: 10px;
+}
+ 
+/* Next style the tags */
+h3,
+h2,
+h1 {
+  font-family: "Comic Sans MS";
+  color: red;
+}
+ 
+p,
+li {
+  font-family: "Arial";
+  font-size: 12pt;
+  color: white;
+ 
+  line-height: 130%;
+}
+ 
+a:link {
+  color: white;
+  text-decoration: none;
+  font-size: 20pt;
+}
+ 
+a:visited {
+  color: white;
+  text-decoration: none;
+  font-size: 20pt;
+}
+ 
+a:hover {
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  font-size: 20pt;
+}
+ 
+/* Now add styles for classes */
+.BText {
+  font-weight: 700;
+}
+ 
+.ItText {
+  font-style: italic;
+}

@@ -1,0 +1,80 @@
+body {
+  background-image: linear-gradient(to bottom, peachpuff, lightbrown),
+    url("BIImage1.jpg");
+  background-repeat: repeat-y; /* Tile the image vertically */
+  background-position: left; /* Position the image on the left side 
+  background-size: 105px auto; /* Set the width to 100px and height to auto */
+
+  color: blue;
+  margin-left: 175px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+mainbox {
+  background-color: hotpink;
+  border: 4px solid purple;
+  padding: 15px;
+}
+
+mainbox:hover {
+  background-color: peachpuff;
+}
+
+p {
+  font-family: Calibri, Helvetica, "Gill Sans", "Gill Sans MT", "Trebuchet MS",
+    sans-serif;
+  color: black;
+  font-size: 14pt;
+  text-indent: 30px;
+}
+
+p::first-letter {
+  color: grey;
+  font-family: "MS Sans Serif";
+  font-size: 20pt;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse; /* ???? */
+}
+
+td {
+  /*????*/
+  text-align: center;
+  padding: 10px;
+}
+
+figcaption {
+  /*????*/
+  font-style: italic;
+  font-size: 6pt;
+  color: grey;
+  text-align: center;
+}
+
+hr {
+  color: grey;
+}
+
+h1,
+h2,
+h3 {
+  color: grey;
+  font-family: "Times New Roman", Times, serif;
+}
+
+a:link,
+a:visited {
+  color: grey;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: red;
+  font-size: 12pt;
+  font-weight: bold;
+  text-decoration: none;
+}

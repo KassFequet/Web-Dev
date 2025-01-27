@@ -1,0 +1,102 @@
+body {
+  background-image: linear-gradient(to bottom right, red, orange);
+}
+
+.mainbox {
+  width: 1000px;
+  background-color: pink;
+  border: 2px solid green;
+
+  padding: 15px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+nav a:link,
+a:visited {
+  color: black;
+  font-size: 20pt;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: pink;
+  background-color: black;
+}
+
+main a:link,
+main :visited {
+  color: purple;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+main a:hover {
+  color: hotpink;
+}
+
+h1,
+h3 {
+  font-family: "Arial Black", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+  color: blue;
+  background-color: green;
+  text-align: center;
+}
+
+p {
+  font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  font-size: 12pt;
+  line-height: 140%;
+}
+
+.dropcap {
+  float: left;
+  line-height: 85%;
+  width: .7em;
+  font-size: 400%;
+  font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+}
+
+.itext {
+  font-style: italic;
+}
+
+.btext {
+  font-weight: bold;
+}
+
+.blueboldtext {
+  color: blue;
+  font-weight: bold;
+}
+
+.redboldtext {
+  color: red;
+  font-weight: bold;
+}
+
+.varietytext {
+  font-size: 8pt;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.otherinformation {
+  width: 400px;
+  background-color: orange;
+  color: blue;
+  padding: 15px;
+  border: 3px dotted gold;
+  text-align: left;
+}
+
+.blackparagraph {
+  background-color: black;
+  padding: 15px;
+  color: pink;
+}

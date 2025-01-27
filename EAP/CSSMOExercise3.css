@@ -1,0 +1,67 @@
+body {
+  background-image: url(BImage1.JPG);
+  background-repeat: repeat-y;
+  background-image: linear-gradient(to bottom, peach, lightbrown);
+
+  color: blue;
+  margin: 50px;
+  margin-left: 175px;
+}
+
+mainbox {
+  width: 1034px;
+  height: 600px;
+  background-color: aquamarine;
+
+  border: 2px grey;
+  padding: 15px;
+
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+a:link,
+a:visited {
+  color: gray;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: red;
+  font-size: 12pt;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+hr {
+  color: grey;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Times New Roman", Times, serif;
+  color: gray;
+}
+
+p {
+  font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  color: blue;
+  font-size: 14pt;
+  text-indent: 30px;
+}
+
+.firstletter {
+  font-family: "MS Sans Serif", sans-serif;
+  color: grey;
+  font-size: 14pt;
+}
+
+.caption {
+  font-style: italic;
+  font-size: 6pt;
+  color: gray;
+  text-align: center;
+}

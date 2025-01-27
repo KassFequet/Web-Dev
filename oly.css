@@ -1,0 +1,123 @@
+body {
+  background-image: linear-gradient(to right, red, orange);
+  text-align: justify;
+  font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  /*if you want the initial font of the body you can also set it here*/
+  /*Really, for any properties you want for the entire document*/
+  /*When you add something to the other sections (ex a new font) that will override the body */
+}
+
+.mainbox {
+  width: 1034px;
+  background-color: beige;
+
+  border: 2px solid black;
+  padding: 15px;
+
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  box-shadow: 4px 4px;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+nav a:link {
+  color: black;
+  font-size: 20pt;
+  text-decoration: none;
+}
+nav a:visited {
+  color: black;
+  font-size: 20pt;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: beige;
+  background-color: black;
+}
+
+main a:link {
+  color: green;
+  text-decoration: underline overline;
+}
+
+main a:visited {
+  color: green;
+  text-decoration: underline overline;
+}
+
+main a:hover {
+  color: beige;
+  background-color: green;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Arial Black", "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+  color: gold;
+  background-color: silver;
+  padding: 20px;
+  font-size: 36pt;
+  text-shadow: 2px 2px red;
+}
+
+h3 {
+  font-family: Tahoma, "Segoe UI", Geneva, Verdana, sans-serif;
+  color: blue;
+  text-decoration: overline underline;
+}
+
+p,
+li {
+  font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  font-size: 12pt;
+  line-height: 1.4em;
+}
+
+blockquote {
+  font-style: italic;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700; /*this is bold text*/
+  text-align: justify;
+}
+
+.itext {
+  /* classes are always set up with a period. these are to be applied where wanted */
+  font-style: italic;
+}
+
+.btext {
+  font-weight: 700;
+}
+/*make sure the name explains it, not bb text, blueblodtext. explains but simple */
+.blueboldtext {
+  color: blue;
+  font-weight: 700;
+}
+
+.didyouknowbox {
+  width: 600px;
+  background-color: blue;
+  color: white;
+  padding: 15px;
+  border: 3px dotted gold;
+  margin: auto;
+}
+
+.didyouknowbox h3 {
+  color: gold;
+}
+
+.silversection {
+  background-color: silver;
+  padding: 15px;
+  color: gold;
+}

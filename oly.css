@@ -18,8 +18,9 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
 
-  box-shadow: 4px 4px;
+  box-shadow: -4px -4px ;
 }
+
 
 nav {
   position: sticky;

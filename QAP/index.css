@@ -1,0 +1,158 @@
+body {
+  background-color: cornflowerblue;
+}
+
+.mainbox {
+  width: 1000px;
+  border: 3px solid indigo;
+  background-color: white;
+  padding: 30px;
+  margin: auto;
+  text-align: justify;
+}
+
+nav {
+  font-family: "Lucida Grande", "Trebuchet MS", "Lucida Sans Unicode",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 700;
+  background-color: lavender;
+}
+
+nav a:link {
+  color: indigo;
+  text-decoration: none;
+}
+
+nav a:visited {
+  color: indigo;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: white;
+  background-color: indigo;
+  text-decoration: none;
+}
+
+main a:link {
+  color: slateblue;
+  text-decoration: none;
+}
+
+main a:visited {
+  color: slateblue;
+  text-decoration: none;
+}
+
+main a:hover {
+  color: white;
+  background-color: slateblue;
+  text-decoration: none;
+}
+
+h1,
+h3 {
+  font-family: "Lucida Grande", "Trebuchet MS", "Lucida Sans Unicode",
+    "Lucida Sans", Arial, sans-serif;
+  color: indigo;
+  text-align: center;
+  background-color: lavender;
+  text-decoration: underline;
+}
+
+p {
+  font-family: "Lucida Sans", "Trebuchet MS", "Lucida Sans Unicode",
+    "Lucida Grande", Arial, sans-serif;
+  font-size: 12pt;
+  line-height: 150%;
+  color: navy;
+}
+
+ul,
+ol {
+  font-family: "Lucida Sans", "Trebuchet MS", "Lucida Sans Unicode",
+    "Lucida Grande", Arial, sans-serif;
+  font-size: 12pt;
+  line-height: 150%;
+  color: navy;
+  margin-left: -30px;
+}
+
+summary {
+  font-family: "Lucida Sans", "Trebuchet MS", "Lucida Sans Unicode",
+    "Lucida Grande", Arial, sans-serif;
+  font-size: 12pt;
+  line-height: 150%;
+  margin-left: 50px;
+  color: navy;
+}
+
+footer {
+  font-family: "Lucida Sans", "Trebuchet MS", "Lucida Sans Unicode",
+    "Lucida Grande", Arial, sans-serif;
+  font-size: 12pt;
+  line-height: 150%;
+  color: navy;
+}
+
+/*This was applied to the images in the other memorable moment section to evenly display them*/
+.imagecontainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*This was applied to the images within that div to format a transition*/
+.imagecontainer img {
+  border: 1px solid black;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/*This was added to the images when hovered over so they would scale up and have a shadow*/
+.imagecontainer img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px black (0, 0, 0, 0.3);
+}
+
+/*This class was added to all the dates. It italicized them*/
+.itext {
+  font-style: italic;
+}
+
+/*This class was added to all the names. It bolded them*/
+.btext {
+  font-weight: 700;
+}
+
+/*This style was added to the questions to make them stand out*/
+.border {
+  border: 2px solid purple;
+  padding: 5px;
+  text-align: justify;
+}
+
+/*This class was applied to the great computer quotes section*/
+.quotesection {
+  background-image: linear-gradient(to bottom right, lightblue, slateblue);
+  border: 2px solid indigo;
+}
+
+/*This was added to the h3 of the great computer quotes section. This was added to take away the background, which was applied to all headers via the h style */
+.nobackground {
+  background-color: transparent;
+}
+
+/*This was added as a div to the image and a p tag in the computer knowledge section. This put the p and image in the same border. This also allowed the image to be aligned on the right side of the page with the answers wrapping around when popped up*/
+.hintbox {
+  font-family: "Lucida Grande", "Trebuchet MS", "Lucida Sans Unicode",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: underline;
+  border: 2px solid purple;
+  padding: 10px;
+  float: right;
+  margin: 130px 50px 70px 50px;
+  background-image: linear-gradient(to bottom right, lightblue, slateblue);
+}

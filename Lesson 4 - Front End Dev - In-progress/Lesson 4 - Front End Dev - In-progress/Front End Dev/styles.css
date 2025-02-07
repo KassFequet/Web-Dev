@@ -1,0 +1,134 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+}
+
+body {
+  background-color: white;
+}
+
+.mainbox {
+  width: 1010px; /*nice to make to box the 1010px bc 5px border was used so now we still have 1000px on the inside to use */
+  /*height: 600px;  will be removed later */
+  background-color: white;
+  border: 5px solid lightgrey;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+main {
+  width: 1000px;
+  background-color: white;
+  padding: 50px; /*This is 50px on both left and ride. So that means each section now has a width of 900px*/
+}
+
+/*Thank section with all elements styles*/
+.thanksection {
+  width: 900px;
+  height: 350px;
+  background-color: white;
+  margin-bottom: 40px;
+}
+
+.thanksection h1, h2 {
+color:purple;
+}
+
+.thanksection p{
+  font-size: 1.2em;
+}
+
+.thanksection li{
+  font-size: 1.2em;
+  margin-left: 15px;
+  list-style-type: "- ";
+
+}
+
+/*Set up the boxes within links as the nav section */
+nav {
+  background-color: white;
+  width: 900px;
+  height: 350px;
+  margin-bottom: 10px;
+}
+
+.servicebox {
+  /*900/4 to get the 4 boxes.(225) Then add margins*/
+  width:205px;
+  height:310px;
+  background-color: white;
+  border-radius: 20px; /*rounded corners*/
+  border: 2px solid lightgray;
+  box-shadow: 5px 5px lightgrey; /*This makes shadow on right and bottom*/
+  margin-left: 10px;
+  margin-right: 10px;
+  float: left;
+}
+
+nav img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+nav h2 {
+  color: black;
+  font-size: 16pt;
+}
+
+nav p {
+  font-size: 1.2em;
+
+}
+
+nav a:link {
+  color: purple;
+  font-size: 1.2em;
+  font-weight: 700;
+  text-decoration: none;
+  float: right;
+}
+
+/*Troubleshooting section and element styles */
+.troublesection {
+  width: 900px;
+  height: 300px;
+  background-color: lightblue;
+}
+
+.troublesection p {
+font-size: 1.2em;
+}
+
+.troublesection .purpletext {
+  color: purple;
+}
+
+.troublesection a:link{
+  color:purple;
+  text-decoration: none;
+  font-size: 1.2em;
+
+}
+/*General styles for the entire page*/
+.btext{
+  font-weight: 700;
+}
+
+.ralign {
+  text-align: right;
+}
+
+h1 {
+  font-size: 26pt;
+}
+
+
+
+
+
+/*Semantic tags don't needed classes as they are styled in this CSS*/

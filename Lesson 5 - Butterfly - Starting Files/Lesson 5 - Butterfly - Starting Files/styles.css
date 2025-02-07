@@ -1,0 +1,115 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+.mainbox {
+  width: 1002px; /*Due to the border being 1px this now makes it so there is still a full 1000px inside*/
+  height: 1083px;
+  background-color: white;
+  border: 1px solid black;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+header {
+  width: 1000px;
+  height: 250px;
+  background-color: lightgreen;
+  float: left;
+}
+
+nav {
+  width: 1000px;
+  height: 50px;
+  background-color: lightgreen;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align: center;
+  float: left;
+  padding-top: 9px;
+}
+
+nav a:link {
+  color: black;
+  font-size: 20pt;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+nav a:visited {
+  color: black;
+  font-size: 20pt;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+nav a:hover {
+  color: rgb(207, 194, 194);
+  background-color: black;
+  font-size: 20pt;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.news {
+  width: 350px;
+  height: 700px;
+  background-color: lightgray;
+  border-right: 1px solid black;
+  padding: 10px;
+  float: left;
+}
+
+.news li {
+  margin-left: 20px;
+  font-size: 1.2em;
+  font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+}
+
+.news .bluetext {
+  color: rgb(77, 143, 165);
+  font-weight: 700;
+}
+
+.maincontent {
+  width: 649px;
+  height: 700px;
+  background-color: white;
+  padding: 10px;
+  float: left;
+}
+
+.maincontent h1 {
+  font-size: 1.2em;
+  font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+}
+
+footer {
+  width: 1000px;
+  height: 80px;
+  background-color: lightgreen;
+  border-top: 1px solid black;
+  float: left;
+}
+
+.copybox {
+  width: 450px;
+  height: 79px;
+  background-color: lightgreen;
+  float: right;
+  padding-top: 10px;
+}
+
+.copybox p{
+  font-size: 1.2em;
+  font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  font-weight: 300;
+}

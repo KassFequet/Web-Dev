@@ -1,18 +1,9 @@
-/*there needs to be 7 title blocks. 
-1 - shop
-2 - gallery
-3 - about
-4 - contact
-5 - workshops
-6 - FAQ
-7 - tattoo pass
-*/
 
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body {
@@ -49,23 +40,23 @@ nav {
 
 nav a:link {
   font-weight: 700;
+  font-size: 1.2em;
   text-decoration: none;
   color: white;
-  padding: 5px;
 }
 
 nav a:visited {
   font-weight: 700;
+  font-size: 1.2em;
   text-decoration: none;
   color: white;
-  padding: 5px;
 }
 
 nav a:hover {
   font-weight: 700;
+  font-size: 1.2em;
   text-decoration: none;
   color: white;
-  padding: 5px;
 }
 
 /* QAP stated for the links to be dark blue but in the document itself it moreso resembled purple so I colormatched as best as possible */
@@ -73,24 +64,24 @@ nav a:hover {
 .navbox {
   width: 120px;
   height: 140px;
-  border: 1px solid white;
   float: left;
+  outline: 3px solid white;
 }
 
 #link {
+
   color: white;
-  background-color: rgb(63, 35, 107);
+  background-color: darkblue;
   padding-top: 115px;
   padding-left: 5px;
 }
 
 #img {
-  background-color: black;
+  width: 120px;
+  height: 140px;
 }
 
 #clear {
-  width: 120px;
-  height: 140px;
   background-color: transparent;
 }
 
@@ -102,4 +93,13 @@ nav a:hover {
   margin-top: 50px;
   margin-bottom: 50px;
   float: left;
+}
+
+main {
+  width: 1000px;
+  height: 500px;
+}
+
+main .gallery {
+  background-color: grey;
 }

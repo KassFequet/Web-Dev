@@ -1,0 +1,105 @@
+/*there needs to be 7 title blocks. 
+1 - shop
+2 - gallery
+3 - about
+4 - contact
+5 - workshops
+6 - FAQ
+7 - tattoo pass
+*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+}
+
+body {
+  background-color: white;
+}
+
+.mainbox {
+  width: 1000px;
+  height: 1500px;
+  background-color: white;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+header {
+  width: 1000px;
+  height: 40px;
+  background-color: gray;
+  padding-top: 5px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  float: left;
+}
+
+header .whitetext {
+  color: white;
+}
+
+nav {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+nav a:link {
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+
+nav a:visited {
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+
+nav a:hover {
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+
+/* QAP stated for the links to be dark blue but in the document itself it moreso resembled purple so I colormatched as best as possible */
+
+.navbox {
+  width: 120px;
+  height: 140px;
+  border: 1px solid white;
+  float: left;
+}
+
+#link {
+  color: white;
+  background-color: rgb(63, 35, 107);
+  padding-top: 115px;
+  padding-left: 5px;
+}
+
+#img {
+  background-color: black;
+}
+
+#clear {
+  width: 120px;
+  height: 140px;
+  background-color: transparent;
+}
+
+.greybox {
+  width: 1000px;
+  height: 40px;
+  background-color: gray;
+  padding-top: 5px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  float: left;
+}

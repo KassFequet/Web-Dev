@@ -1,0 +1,138 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+    color: white;
+  }
+  
+  body {
+    background-color: white;
+  }
+  
+  .mainbox {
+    width: 1036px;
+    height: 1500px; /* will be removed once page is complete */
+    background-color: black;
+    padding: 15px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  /*The nav is divided into 3 boxes*/
+  nav {
+    width: 1000px;
+    height: 40px;
+    background-color: pink;
+  }
+  
+  nav a:link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav a:visited {
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: black;
+    background: white;
+    text-decoration: none;
+  }
+  .navlogo {
+    width: 250px;
+    height: 40px;
+    background-color: black;
+    padding-left: 40px;
+    float: left;
+  }
+  
+  .navmenu {
+    width: 500px;
+    height: 40px;
+    background-color: black;
+    text-align: center;
+    padding-top: 10px;
+    float: left;
+  }
+  
+  .navsign {
+    width: 250px;
+    height: 40px;
+    background-color: black;
+    padding-right: 40px;
+    padding-top: 10px;
+    text-align: right;
+    float: left;
+  }
+  
+  .blueboxlink {
+    background-color: blue;
+    padding: 5px 15px 5px 15px;
+  }
+  
+  header {
+    width: 1000px;
+    height: 700px;
+    background-color: black;
+    margin-top: 70px;
+    text-align: center;
+    float: left;
+  }
+  
+  header .bluetext {
+    color: blue;
+    font-family: "Comic Sans MS";
+  }
+  
+  header h1 {
+    font-size: 36pt;
+  }
+  
+  header .greytext {
+    color: grey;
+    font-size: 1.2em;
+  }
+  
+  /*This is where the styles for main {} go */
+  
+  footer {
+    width: 1000px;
+    height: 250px;
+    background-color: black;
+    padding-left: 20px;
+    float: left;
+  }
+  
+  footer p {
+    font-size: 1.2em;
+    color: grey;
+  }
+  
+  .msgbox {
+    width: 400px;
+    height: 250px;
+    font-size: 1.1em;
+    padding-right: 10px;
+    background-color: black;
+    float: left;
+  }
+  
+  .linkbox {
+    width: 193px;
+    height: 250px;
+    background-color: black;
+    line-height: 1.5em;
+    font-size: 1.2em;
+    float: left;
+  }
+  
+  .linkbox a:link{
+    color:grey;
+    font-weight: 400px;
+    text-decoration: none;
+  }

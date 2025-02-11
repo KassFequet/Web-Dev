@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Layout</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            gap: 10px;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #000;
+        }
+        .white-box {
+            background-color: white;
+        }
+        .dark-blue-box {
+            background-color: darkblue;
+            color: white;
+        }
+        .img-box img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box1" class="box white-box"></div>
+        <div id="box2" class="box dark-blue-box"><a href="page1.html" style="color: white;">Link 1</a></div>
+        <div id="box3" class="box img-box"><img src="image1.jpg" alt="Image 1"></div>
+        <div id="box4" class="box white-box"></div>
+        <div id="box5" class="box dark-blue-box"><a href="page2.html" style="color: white;">Link 2</a></div>
+        <div id="box6" class="box img-box"><img src="image2.jpg" alt="Image 2"></div>
+        <div id="box7" class="box white-box"></div>
+        <div id="box8" class="box dark-blue-box"><a href="page3.html" style="color: white;">Link 3</a></div>
+        <div id="box9" class="box img-box"><img src="image3.jpg" alt="Image 3"></div>
+        <div id="box10" class="box white-box"></div>
+        <div id="box11" class="box dark-blue-box"><a href="page4.html" style="color: white;">Link 4</a></div>
+        <div id="box12" class="box img-box"><img src="image4.jpg" alt="Image 4"></div>
+        <div id="box13" class="box white-box"></div>
+        <div id="box14" class="box dark-blue-box"><a href="page5.html" style="color: white;">Link 5</a></div>
+        <div id="box15" class="box img-box"><img src="image5.jpg" alt="Image 5"></div>
+        <div id="box16" class="box white-box"></div>
+        <div id="box17" class="box dark-blue-box"><a href="page6.html" style="color: white;">Link 6</a></div>
+        <div id="box18" class="box img-box"><img src="image6.jpg" alt="Image 6"></div>
+        <div id="box19" class="box white-box"></div>
+        <div id="box20" class="box dark-blue-box"><a href="page7.html" style="color: white;">Link 7</a></div>
+        <div id="box21" class="box img-box"><img src="image7.jpg" alt="Image 7"></div>
+        <div id="box22" class="box white-box"></div>
+        <div id="box23" class="box dark-blue-box"><a href="page8.html" style="color: white;">Link 8</a></div>
+        <div id="box24" class="box img-box"><img src="image8.jpg" alt="Image 8"></div>
+    </div>
+</body>
+</html>

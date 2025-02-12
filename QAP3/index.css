@@ -1,9 +1,12 @@
+/*should get rid of _Blank in links
+maybe amount of padding left and right on nav*/
+
 
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family:Verdana, Geneva, Tahoma, sans-serif, Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body {
@@ -21,9 +24,10 @@ body {
 
 header {
   width: 1000px;
-  height: 40px;
+  height: 35px;
   background-color: gray;
-  padding-top: 5px;
+  padding-top: 3px;
+  padding-left: 3px;
   margin-top: 50px;
   margin-bottom: 50px;
   float: left;
@@ -40,21 +44,21 @@ nav {
 
 nav a:link {
   font-weight: 700;
-  font-size: 1.2em;
+  font-size: 1.1em;
   text-decoration: none;
   color: white;
 }
 
 nav a:visited {
   font-weight: 700;
-  font-size: 1.2em;
+  font-size: 1.1em;
   text-decoration: none;
   color: white;
 }
 
 nav a:hover {
   font-weight: 700;
-  font-size: 1.2em;
+  font-size: 1.1em;
   text-decoration: none;
   color: white;
 }
@@ -72,8 +76,8 @@ nav a:hover {
 
   color: white;
   background-color: darkblue;
-  padding-top: 115px;
-  padding-left: 5px;
+  padding-top: 113px;
+  padding-left: 6px;
 }
 
 #img {
@@ -87,11 +91,11 @@ nav a:hover {
 
 .greybox {
   width: 1000px;
-  height: 40px;
+  height: 35px;
   background-color: gray;
   padding-top: 5px;
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   float: left;
 }
 
@@ -101,5 +105,42 @@ main {
 }
 
 main .gallery {
+  height: 250px;
+  width:1000px;
+  background-color: lightgrey;
+  float: left;
+}
+
+.gallerybox {
+  background-color: pink;
+  margin-top: 25px;
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 200px;
+  width: 220px;
+  float: left;
+}
+
+.gallerybox p {
+color: rgb(107, 104, 104);
+font-size: .90em;
+}
+
+main a:link {
+  text-decoration: none;
+  color: white;
   background-color: grey;
 }
+
+main a:visited {
+  text-decoration: none;
+  color: white;
+  background-color: grey;
+}
+
+main a:hover {
+  text-decoration: none;
+  color: white;
+  background-color: grey;
+}
+

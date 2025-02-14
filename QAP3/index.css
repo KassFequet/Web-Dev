@@ -1,7 +1,3 @@
-/*should get rid of _Blank in links
-maybe amount of padding left and right on nav*/
-
-
 * {
   margin: 0px;
   padding: 0px;
@@ -42,6 +38,33 @@ nav {
   margin-right: 20px;
 }
 
+/*The 24 boxes in the navigation are all assigned to this class*/
+.navbox {
+  width: 120px;
+  height: 140px;
+  float: left;
+  outline: 3px solid white;
+}
+
+/* ID for boxes in nav with images. */
+#img {
+  width: 120px;
+  height: 140px;
+}
+
+/*ID for boxes in nav that are empty*/
+#clear {
+  background-color: transparent;
+}
+
+/*ID for boxes in nav that are links*/
+#link {
+  color: white;
+  background-color: darkblue;
+  padding-top: 113px;
+  padding-left: 6px;
+}
+
 nav a:link {
   font-weight: 700;
   font-size: 1.1em;
@@ -63,46 +86,20 @@ nav a:hover {
   color: white;
 }
 
-/* QAP stated for the links to be dark blue but in the document itself it moreso resembled purple so I colormatched as best as possible */
-
-.navbox {
-  width: 120px;
-  height: 140px;
-  float: left;
-  outline: 3px solid white;
+main {
+  width: 1000px;
+  height: 500px;
 }
 
-#link {
-
-  color: white;
-  background-color: darkblue;
-  padding-top: 113px;
-  padding-left: 6px;
-}
-
-#img {
-  width: 120px;
-  height: 140px;
-}
-
-#clear {
-  background-color: transparent;
-}
-
-.greybox {
+main .greybox {
   width: 1000px;
   height: 35px;
   background-color: gray;
-  padding-top: 5px;
   margin-top: 50px;
   margin-bottom: 20px;
   float: left;
 }
 
-main {
-  width: 1000px;
-  height: 500px;
-}
 
 main .gallery {
   height: 250px;
@@ -112,35 +109,58 @@ main .gallery {
 }
 
 .gallerybox {
-  background-color: pink;
-  margin-top: 25px;
-  margin-left: 15px;
-  margin-right: 15px;
-  height: 200px;
+  background-color: lightgrey;
+  margin: 25px 15px 0px 15px;
+  height: 190px;
   width: 220px;
   float: left;
 }
 
+.gallerybox h4{
+  font-family:Arial, Helvetica, sans-serif;
+}
+
 .gallerybox p {
+font-family:Arial, Helvetica, sans-serif;
 color: rgb(107, 104, 104);
 font-size: .90em;
+line-height: 20px;
+margin-bottom: 10px;
 }
 
-main a:link {
+.gallerybox a:link {
+  text-decoration: none;
+  color: white;
+  background-color: grey;
+  padding: 7px;
+}
+
+.gallerybox a:visited {
   text-decoration: none;
   color: white;
   background-color: grey;
 }
 
-main a:visited {
+.gallerybox a:hover {
   text-decoration: none;
   color: white;
   background-color: grey;
 }
 
-main a:hover {
-  text-decoration: none;
-  color: white;
-  background-color: grey;
+.gallerybox img{
+  border: 5px solid white;
 }
 
+.greybox img{
+  border: none;
+  float: right;
+  padding-bottom: 2px;
+}
+
+.greybox p{
+  font-size: .75em;
+  font-weight: 600;
+  padding-top: 10px;
+  padding-left: 10px;
+  float: left;
+}

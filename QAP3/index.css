@@ -67,21 +67,18 @@ nav {
 
 nav a:link {
   font-weight: 700;
-  font-size: 1.1em;
   text-decoration: none;
   color: white;
 }
 
 nav a:visited {
   font-weight: 700;
-  font-size: 1.1em;
   text-decoration: none;
   color: white;
 }
 
 nav a:hover {
   font-weight: 700;
-  font-size: 1.1em;
   text-decoration: none;
   color: white;
 }
@@ -118,14 +115,17 @@ main .gallery {
 
 .gallerybox h4{
   font-family:Arial, Helvetica, sans-serif;
+  font-size: .90em;
+ float: left;
 }
 
 .gallerybox p {
 font-family:Arial, Helvetica, sans-serif;
 color: rgb(107, 104, 104);
-font-size: .90em;
+font-size: .85em;
 line-height: 20px;
-margin-bottom: 10px;
+margin-top: 30px;
+margin-bottom: 30px;
 }
 
 .gallerybox a:link {
@@ -146,6 +146,14 @@ margin-bottom: 10px;
   color: white;
   background-color: grey;
 }
+
+.gallerybox .decorbox {
+  width: 85px;
+  height: 20px;
+  background-image: linear-gradient(to bottom right, rgb(88, 87, 87), rgb(225, 218, 218));
+  float: right;
+}
+
 
 .gallerybox img{
   border: 5px solid white;

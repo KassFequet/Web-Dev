@@ -11,8 +11,115 @@
       <header></header>
       <nav></nav>
       <main>
-        <!-- For larger scripts, set up a file and call it in the script tag -->
-        <script src="Inventory.js"></script>
+        <table class="colorstable">
+          <tr class="centertext">
+            <th></th>
+            <th>Red</th>
+            <th>Yellow</th>
+            <th>Blue</th>
+          </tr>
+          <tr>
+            <td>Red</td>
+            <td>Red</td>
+            <td>Orange</td>
+            <td>Purple</td>
+          </tr>
+          <tr>
+            <td>Yellow</td>
+            <td class="orangecell">Orange</td>
+            <td>Yellow</td>
+            <td>Green</td>
+          </tr>
+          <tr>
+            <td>Blue</td>
+            <td>Purple</td>
+            <td>Green</td>
+            <td>Blue</td>
+          </tr>
+        </table>
+
+        <br /><br />
+
+        <table class="scheduletable">
+          <tr class="mainhead">
+            <th colspan="5">Class Schedule</th>
+          </tr>
+          <tr class="colhead">
+            <th>LESSON</th>
+            <th>TOPIC</th>
+            <th>ASSIGNMENT</th>
+            <th>Points</th>
+            <th>DUE</th>
+          </tr>
+          <tr class="lightblue">
+            <td rowspan="2" class="centertext">1</td>
+            <td rowspan="2">What is Distance<br />Learning?</td>
+            <td>Wiki #1</td>
+            <td>10</td>
+            <td>March 10</td>
+          </tr>
+          <tr class="white">
+            <td>Presentation</td>
+            <td>20</td>
+            <td></td>
+          </tr>
+
+          <tr class="lightblue">
+            <td class="centertext">2</td>
+            <td>History & <br />Theories</td>
+            <td>Brief Paper</td>
+            <td>20</td>
+            <td>March 24</td>
+          </tr>
+
+          <tr class="white">
+            <td colspan="5" class="centertext">Spring Break</td>
+          </tr>
+
+          <tr class="lightblue">
+            <td rowspan="2" class="centertext">3</td>
+            <td rowspan="2">Distance<br />Learners</td>
+            <td>Discussion #1</td>
+            <td>10</td>
+            <td>April 7</td>
+          </tr>
+          <tr class="white">
+            <td>Group Project</td>
+            <td>50</td>
+            <td>April 14</td>
+          </tr>
+
+          <tr class="lightblue">
+            <td class="centertext">4</td>
+            <td>Media Selection</td>
+            <td>Blog #1</td>
+            <td>10</td>
+            <td>April 21</td>
+          </tr>
+        </table>
+        <br /><br />
+        <!-- For larger scripts, set up a file and call it in the script tag
+        <script src="Inventory.js"></script>-->
+        <table class="scheduletable">
+          <tr>
+            <td rowspan="4">1</td>
+            <td colspan="3">2</td>
+            <td rowspan="4">3</td>
+            <td rowspan="2">4</td>
+          </tr>
+          <tr>
+            <td rowspan="2">5</td>
+            <td colspan="2">6</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>8</td>
+            <td rowspan="2">9</td>
+          </tr>
+          <tr>
+            <td colspan="3">10</td>
+          </tr>
+        </table>
       </main>
       <footer></footer>
     </div>

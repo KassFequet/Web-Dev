@@ -4,6 +4,75 @@ body {
 
 .mainbox {
   width: 1000px;
-  height: 500px;
+  height: 1000px;
   background: white;
+}
+
+/*This is a general style that is applied to all tables*/
+table,
+th,
+td {
+  border: 1px solid;
+  border-collapse: collapse;
+  padding: 2px;
+}
+
+/*Styles that are applied to a specific table*/
+.colorstable {
+  width: 500px;
+  margin: auto;
+}
+
+.colorstable .lefttext {
+  text-align: left;
+}
+
+.colorstable .righttext {
+  text-align: right;
+}
+
+.colorstable .centertext {
+  text-align: center;
+}
+
+.colorstable .orangecell {
+  background-color: orange;
+}
+
+/*Styles for the class schedule table*/
+.scheduletable {
+  width: 700px;
+  margin: auto;
+  font-size: 14pt;
+  font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+}
+
+.scheduletable th,
+td {
+  height: 40px;
+  padding-left: 10px;
+}
+.scheduletable .mainhead {
+  text-align: center;
+  font-size: 16pt;
+  background-color: lavender;
+}
+
+.scheduletable .colhead {
+  text-align: center;
+  color: white;
+  background-color: rgb(68, 114, 143);
+  height: 1.5em;
+}
+
+.scheduletable .lightblue {
+  background-color: lightblue;
+}
+
+.scheduletable .white {
+  background-color: white;
+}
+
+.scheduletable .centertext {
+  text-align: center;
 }

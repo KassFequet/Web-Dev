@@ -1,0 +1,49 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Courier New";
+}
+
+body {
+  background-color: aquamarine;
+}
+
+.mainbox {
+  width: 1000px;
+  height: 1000px; /*will be removed later */
+  background-color: white;
+  border: 3px solid gray;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/*This is a general style that is applied to all tables*/
+table,
+th,
+td {
+  border: 1px solid;
+  border-collapse: collapse;
+  padding: 2px;
+  font-family: "Courier New"; /* set up a non-proportional font */
+}
+
+/*Styles that are applied to a specific table*/
+.receipttable {
+  width: 400px;
+  margin: auto;
+}
+
+.receipttable .lefttext {
+  text-align: left;
+}
+
+.receipttable .righttext {
+  text-align: right;
+}
+
+.receipttable .centertext {
+  text-align: center;
+}

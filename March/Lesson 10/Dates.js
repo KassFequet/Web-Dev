@@ -53,6 +53,13 @@ InvDate = InvDate.setDate(Day + 1); //this adds 1 to the date that is input to g
 InvDate = new Date(InvDate);
 console.log("Invoice Date from input: " + InvDate.toLocaleDateString());
 
+// In a nutshell this is how you repare the input data
+InvDate = prompt("Enter the invoice date (YYY/MM/DD): ");
+InvDate = InvDate.replaceAll("-", "/");
+InvDate = new Date(InvDate);
+//then you can print when you need it
+console.log(InvDate.toDateString());
+
 //Calculate the time difference between 2 dates
 let date1 = new Date(2025, 11, 25);
 let date2 = new Date();
@@ -75,3 +82,65 @@ console.log(
     Difference_In_Days +
     " days"
 );
+
+// Do a couple of date exercises here.
+
+// Exercise to determine the per diem amount.
+let StartDate = prompt("Enter the start date (YYYY/MM/DD): ");
+StartDate = StartDate.replaceAll("-", "/");
+StartDate = new Date(StartDate);
+
+let EndDate = prompt("Enter the end date (YYYY/MM/DD): ");
+EndDate = EndDate.replaceAll("-", "/");
+EndDate = new Date(EndDate);
+
+let Difference_In_Time = EndDate.getTime() - StartDate.getTime();
+// This will get the difference in milliseconds.  Convert to days.
+let Difference_In_Days = Math.round(Difference_In_Time / (1000 * 3600 * 24));
+
+let PerDiem = Difference_In_Days * 56.0;
+
+console.log(StartDate.toDateString());
+console.log(EndDate.toDateString());
+console.log(Difference_In_Days);
+console.log(PerDiem);
+*/
+
+// Exercise to determine discount and due dates for an invoice.
+let InvDate = prompt("Enter the invoice date (YYYY/MM/DD): ");
+InvDate = InvDate.replaceAll("-", "/");
+InvDate = new Date(InvDate); // Create the date object.
+console.log("Original invoice date: " + InvDate.toDateString());
+
+let InvAmt = prompt("Enter the amount of the invoice: ");
+InvAmt = parseFloat(InvAmt); // Create a numeric float object.
+console.log("Original amount of invoice: " + InvAmt);
+
+// If you need to use the same date in multiple calculations, get the Days, Months and Years from the original date.
+Days = InvDate.getDate();
+Months = InvDate.getMonth();
+Years = InvDate.getFullYear();
+// As you need the date for a new calculation,
+//    NewDate = new Date(Years, Months, Days);
+// Set the new date equal to the original invoice date.
+
+// Set the date for the Discount date to the original date.
+let DisDate = new Date(Years, Months, Days); // Dis Date should be the same as the Inv Date.
+DisDate = DisDate.setDate(Days + 10);
+DisDate = new Date(DisDate);
+console.log("Discount date: " + DisDate.toDateString());
+
+let AmtLessDis = InvAmt * 0.98;
+console.log("Amount less the discount: " + AmtLessDis);
+
+// Set the date for the due date based on the original date.
+let DueDate = new Date(Years, Months, Days);
+DueDate = DueDate.setDate(Days + 30);
+DueDate = new Date(DueDate);
+console.log("Due date: " + DueDate.toDateString());
+
+// Find the drop dead date as 6 months from the invoice date.
+let DropDate = new Date(Years, Months, Days);
+DropDate = DropDate.setMonth(Months + 6);
+DropDate = new Date(DropDate);
+console.log("Drop dead date: " + DropDate.toDateString());

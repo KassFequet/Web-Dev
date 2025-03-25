@@ -1,0 +1,80 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aquamarine;
+}
+
+.mainbox {
+  width: 1000px;
+  /* height: 600px; will be removed later */
+  background-color: white;
+  border: 3px solid gray;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+header {
+  width: 996px;
+  height: 200px;
+  background-color: lightgreen;
+}
+
+nav {
+  width: 996px;
+  height: 40px;
+  background-color: lightblue;
+  margin-top: 10px;
+}
+
+main {
+  width: 995px;
+  height: 425px;
+  background-color: lightyellow;
+}
+
+/* The main section will contain 3 divs. */
+
+.mainleft {
+  width: 490px;
+  height: 250px;
+  background-color: lightcyan;
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 5px;
+  float: left;
+}
+
+.mainright {
+  width: 488px;
+  height: 250px;
+  background-color: lightgray;
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 5px;
+  float: left;
+}
+
+.mainbottom {
+  width: 983px;
+  height: 150px;
+  background-color: lightseagreen;
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 5px;
+  float: left;
+}
+footer {
+  width: 996px;
+  height: 80px;
+  background-color: black;
+  margin-top: 10px;
+}

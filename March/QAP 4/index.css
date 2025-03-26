@@ -26,8 +26,8 @@ th,
 td {
   border: 1px solid;
   border-collapse: collapse;
-  padding: 2px;
-  font-family: "Courier New"; /* set up a non-proportional font */
+  padding: 10px;
+  font-family: "Courier New";
 }
 
 /*Styles that are applied to a specific table*/
@@ -36,12 +36,17 @@ td {
   margin: auto;
 }
 
+.receipttable .row {
+  width: 100%;
+  position: relative;
+}
+
 .receipttable .lefttext {
-  text-align: left;
+  float: left;
 }
 
 .receipttable .righttext {
-  text-align: right;
+  float: right;
 }
 
 .receipttable .centertext {

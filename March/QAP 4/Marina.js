@@ -26,20 +26,14 @@ const cur2Format = new Intl.NumberFormat("en-CA", {
   maximumFractionDigits: "2",
 });
 
-const per0Format = new Intl.NumberFormat("en-CA", {
-  style: "percent",
+const num0Format = new Intl.NumberFormat("en-CA", {
+  style: "decimal",
   minimumFractionDigits: "0",
   maximumFractionDigits: "0",
 });
 
-const com2Format = new Intl.NumberFormat("en-CA", {
-  style: "decimal",
-  minimumFractionDigits: "2",
-  maximumFractionDigits: "2",
-});
-
 //Gather user input.
-
+/*
 let Date = prompt("Enter the current date(YYYY-MM-DD): ");
 let SiteNum = prompt("Enter the site number (1-100): ");
 SiteNum = parseInt(SiteNum);
@@ -59,6 +53,26 @@ NumAltMem = parseInt(NumAltMem);
 
 let Clean = prompt("Do you want weekly site cleaning? (Y/N): ").toUpperCase();
 let Video = prompt("Do you want video surveillance? (Y/N): ").toUpperCase();
+*/
+let Date = "2025-01-01";
+let SiteNum = "100";
+SiteNum = parseInt(SiteNum);
+
+let MemName = "Kassaundra Fequet";
+let StAdd = "123 Main Street";
+let City = "St. John's";
+let Prov = "NL";
+let PostCode = "A1C 5C6";
+
+let HomePhone = "1234567890";
+let CellPhone = "0987654321";
+
+let MemType = "E";
+let NumAltMem = "2"; //Family and friends that are allowed to access the grounds.//
+NumAltMem = parseInt(NumAltMem);
+
+let Clean = "Y";
+let Video = "Y";
 
 // Perform program calculations and generate results.
 
@@ -112,13 +126,178 @@ document.writeln("<br />");
 document.writeln("<table class='receipttable'>");
 
 document.writeln("<tr class='centertext'>");
-document.writeln("<td>St. John's Marina & Yacht Club<br />Yearly Member Receipt<br /></td>"
+document.writeln(
+  "<td>St. John's Marina & Yacht Club<br />Yearly Member Receipt<br /></td>"
 );
 document.writeln("</tr>");
 
 document.writeln("<tr>");
-document.writeln("<td><br />Client Name and Address:<br /></td>");
+document.writeln("<td><br />Client Name and Address:<br /><br /></td>");
 document.writeln("</tr>");
 
 document.writeln("<tr>");
-document.writeln("<td>" MemName + "<br />" + StAdd + "<br />" + City + ", " + Prov + " " + PostCode + "<br /></td>");
+document.writeln(
+  "<td>" +
+    MemName +
+    "<br />" +
+    StAdd +
+    "<br />" +
+    City +
+    ", " +
+    Prov +
+    " " +
+    PostCode +
+    "<br />"
+);
+document.writeln("<br />");
+document.writeln("Phone: " + HomePhone + " (H)");
+document.writeln(
+  "</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" + CellPhone + " (C)</td>"
+);
+document.writeln("</tr>");
+
+document.writeln("<tr>");
+document.writeln(
+  "<td class='row'>" +
+    "<span class='lefttext'>Site #: " +
+    SiteNum +
+    "</span>" +
+    "<span class='righttext'>Member type: " +
+    MemTypeAns +
+    "</span>" +
+    "</td>"
+);
+document.writeln("</tr>");
+
+document.writeln("<tr>");
+document.writeln(
+  "<td class='row'>" +
+    "<span class='lefttext'>Alternate members:" +
+    "</span>" +
+    "<span class='righttext'>" +
+    num0Format.format(NumAltMem) +
+    "</span><br />"
+);
+document.writeln(
+  "<span class='lefttext'>Weekly site cleaning:" +
+    "</span>" +
+    "<span class='righttext'>" +
+    CleanAns +
+    "</span><br />"
+);
+document.writeln(
+  "<span class='lefttext'>Video surveillance:" +
+    "</span>" +
+    "<span class='righttext'>" +
+    VideoAns +
+    "</span><br /></td>"
+);
+document.writeln("</tr>");
+
+document.writeln("<tr>");
+document.writeln(
+  "<td class='row'>" +
+    "<span class='lefttext'>Site charges:" +
+    "</span>" +
+    "<span class='righttext'>" +
+    cur2Format.format(SiteCharge) +
+    "</span><br />"
+);
+document.writeln(
+  "<span class='lefttext'>Extra charges:" +
+    "</span>" +
+    "<span class='righttext'>" +
+    cur2Format.format(ExtraCharge) +
+    "</span><br /></td>"
+);
+document.writeln("</tr>");
+
+document.writeln("<tr>");
+document.writeln(
+  "<td class='row'>" +
+    "<span class='lefttext'>Subtotal:" +
+    "</span>" +
+    "<span class='righttext'>" +
+    cur2Format.format(Subtotal) +
+    "</span><br />"
+);
+document.writeln(
+  "<span class='lefttext'>Sales tax (HST):" +
+    "</span>" +
+    "<span class='righttext'>" +
+    cur2Format.format(HST) +
+    "</span><br /></td>"
+);
+document.writeln("</tr>");
+
+document.writeln("<tr>");
+document.writeln(
+  "<td class='row'>" +
+    "<span class='lefttext'>Total monthly charges:" +
+    "</span>" +
+    "<span class='righttext'>" +
+    cur2Format.format(TotMonCharge) +
+    "</span><br />"
+);
+document.writeln(
+  "<span class='lefttext'>Monthly dues:" +
+    "</span>" +
+    "<span class='righttext'>" +
+    cur2Format.format(MonDues) +
+    "</span><br /></td>"
+);
+document.writeln("</tr>");
+
+document.writeln("<tr>");
+document.writeln(
+  "<td class='row'>" +
+    "<span class='lefttext'>Total monthly fees:" +
+    "</span>" +
+    "<span class='righttext'>" +
+    cur2Format.format(TotMonFee) +
+    "</span><br />"
+);
+document.writeln(
+  "<span class='lefttext'>Total yearly fees:" +
+    "</span>" +
+    "<span class='righttext'>" +
+    cur2Format.format(TotYearFee) +
+    "</span><br /></td>"
+);
+document.writeln("</tr>");
+
+document.writeln("<tr>");
+document.writeln(
+  "<td class='row'>" +
+    "<span class='lefttext'>Monthly payment:" +
+    "</span>" +
+    "<span class='righttext'>" +
+    cur2Format.format(MonPay) +
+    "</span><br /><br /></td>"
+);
+document.writeln("</tr>");
+
+document.writeln("<tr>");
+document.writeln(
+  "<td class='row'>" +
+    "<span class='lefttext'>Issued:" +
+    "</span>" +
+    "<span class='righttext'>" +
+    Date +
+    "</span><br /><br />"
+);
+document.writeln(
+  "<span class='lefttext'>HSTReg No:" +
+    "</span>" +
+    "<span class='righttext'>" +
+    "549-33-5849" +
+    "</span><br /><br />"
+);
+document.writeln(
+  "<span class='lefttext'>Cancellation fee:" +
+    "</span>" +
+    "<span class='righttext'>" +
+    cur2Format.format(CanFee) +
+    "</span><br /></td>"
+);
+document.writeln("</tr>");

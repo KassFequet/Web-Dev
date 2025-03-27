@@ -51,14 +51,6 @@ main {
   float: left;
 }
 
-.mainleft h1 {
-  font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
-  font-size: 48pt;
-  font-style: italic;
-  color: green;
-  text-align: center;
-}
-
 .mainright {
   width: 488px;
   height: 250px;
@@ -70,14 +62,9 @@ main {
   float: left;
 }
 
-.mainright h3 {
-  font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
-  color: purple;
-  text-align: center;
-}
 .mainbottom {
   width: 983px;
-  height: 250px;
+  height: 150px;
   background-color: lightseagreen;
   border: 1px solid black;
   padding: 10px;
@@ -90,10 +77,4 @@ footer {
   height: 80px;
   background-color: black;
   margin-top: 10px;
-}
-
-button {
-  width: 75px;
-  height: 40px;
-  background-color: orange;
 }

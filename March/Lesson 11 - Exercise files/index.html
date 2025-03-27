@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
 
-    <!-- Always set up the title and link to
-         the style sheet up front. -->
+    <!-- Always set up the title and link to the style sheet up front. -->
     <title>Lesson 11 Template</title>
     <link rel="stylesheet" href="styles.css" />
+    <!-- access the javascript file with a statement in the head section, similar to where we place the css file-->
+
+    <!-- now any js code is set up as a function in the file. You can also have multiple files all referenced here. Just set up a second, third etc, script  underneath the one below.-->
     <script src="index.js"></script>
   </head>
   <body>
@@ -18,13 +20,21 @@
       <nav></nav>
 
       <main>
-        <div class="mainleft"></div>
+        <div class="mainleft">
+        </div>
 
-        <div class="mainright"></div>
+        <div class="mainright">
 
-        <div class="mainbottom"></div>
+        </div>
+
+        <div class="mainbottom">
+          <button id="btnView" onclick="ShowStuff()"">Show Message</button>
+          <button id="btnView2" onclick="AddNums()"">Add Numbers</button><br />
+        
+          <!--if you use a button define a landing place for the results -->
+          <br />
+        </div>
       </main>
-
       <footer></footer>
     </div>
   </body>

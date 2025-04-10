@@ -1,6 +1,6 @@
 // Desc: QAP 4 - St. John's Marina & Yacht Club - Yearly Member Receipt //
 //Author: Kassaundra Fequet
-//Dates: Mar 17/25
+//Dates: Mar 17/25 - Mar 27/25
 
 //Define program constants //
 const EVEN_SITE_RATE = 80.0; //Even numbered sites cost $80/month.//
@@ -33,7 +33,7 @@ const num0Format = new Intl.NumberFormat("en-CA", {
 });
 
 //Gather user input.
-/*
+
 let Date = prompt("Enter the current date(YYYY-MM-DD): ");
 let SiteNum = prompt("Enter the site number (1-100): ");
 SiteNum = parseInt(SiteNum);
@@ -42,10 +42,10 @@ let MemName = prompt("Enter the members name: ");
 let StAdd = prompt("Enter the street address: ");
 let City = prompt("Enter the city: ");
 let Prov = prompt("Enter the province (XX): ").toUpperCase();
-let PostCode = prompt("Enter the postal code (X0X0X0): ").toUpperCase();
+let PostCode = prompt("Enter the postal code (X#X #X#): ").toUpperCase();
 
-let HomePhone = prompt("Enter the home phone number (0000000000): ");
-let CellPhone = prompt("Enter the cell phone number (0000000000): ");
+let HomePhone = prompt("Enter the home phone number (##########): ");
+let CellPhone = prompt("Enter the cell phone number (##########): ");
 
 let MemType = prompt("Enter the membership type (S/E): ").toUpperCase();
 let NumAltMem = prompt("Enter the number of alternate members: "); //Family and friends that are allowed to access the grounds.//
@@ -53,30 +53,8 @@ NumAltMem = parseInt(NumAltMem);
 
 let Clean = prompt("Do you want weekly site cleaning? (Y/N): ").toUpperCase();
 let Video = prompt("Do you want video surveillance? (Y/N): ").toUpperCase();
-*/
-let Date = "2025-01-01";
-let SiteNum = "100";
-SiteNum = parseInt(SiteNum);
-
-let MemName = "Kassaundra Fequet";
-let StAdd = "123 Main Street";
-let City = "St. John's";
-let Prov = "NL";
-let PostCode = "A1C 5C6";
-
-let HomePhone = "1234567890";
-let CellPhone = "0987654321";
-
-let MemType = "E";
-let NumAltMem = "2"; //Family and friends that are allowed to access the grounds.//
-NumAltMem = parseInt(NumAltMem);
-
-let Clean = "Y";
-let Video = "Y";
 
 // Perform program calculations and generate results.
-
-//When calcs are performed in an if - all variables must be defined out the if block
 
 let NumSiteCharge = ODD_SITE_RATE;
 if (SiteNum / 2 == 0) {
@@ -287,7 +265,7 @@ document.writeln(
     "</span><br /><br />"
 );
 document.writeln(
-  "<span class='lefttext'>HSTReg No:" +
+  "<span class='lefttext'>HST Reg No:" +
     "</span>" +
     "<span class='righttext'>" +
     "549-33-5849" +
